@@ -1,0 +1,229 @@
+*
+{
+	font-family: helvetica neue;
+	color:black;
+	padding: 0;
+	margin: 0;
+}
+
+body
+{
+	padding: 0pt 20pt;
+}
+
+div
+{
+	padding: 20pt 0;
+}
+
+h1
+{
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 28pt;
+}
+
+h2
+{
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 24pt;
+}
+
+h3
+{
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 250pt;
+	text-align: center;
+}
+
+h4
+{
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 14pt;
+	line-height: 100%;
+}
+
+p
+{
+	font-size: 16pt;
+	line-height: 130%;
+}
+
+input
+{
+	width: 80vw;
+	display: block;
+	margin:auto;
+	border-radius: 0;
+	font-size: 24pt;
+	padding: 10pt 0;
+}
+
+input[type="submit"]
+{
+	font-size: 24pt;
+	padding: 10pt 20pt;
+	background: black;
+	color:white;
+	text-align: left;
+}
+
+form
+{
+	margin: 50pt 0;
+	margin-bottom: 100pt;
+}
+
+.flex
+{
+	display: flex;
+}
+.flex-header
+{
+	display: flex;
+	justify-content: space-between;
+}
+.col-center
+{
+	flex: 1;
+}
+.col
+{
+	flex: 1;
+	padding: 20pt;
+}
+
+.mobile-col
+{
+	display: none;
+}
+
+.coverimg
+{
+	background: url(index.png) no-repeat center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: center center;
+	width: 100%;
+	height: 70vh;
+}
+
+@media only screen and (max-width: 1300px) {
+	h3
+	{
+		font-size: 150pt;
+	}
+
+	p
+	{
+		font-size: 11pt;
+	}
+
+}
+
+
+@media only screen and (max-width: 900px) {
+
+	h3
+	{
+		font-size: 90pt;
+	}
+
+	h2:last-of-type
+	{
+		text-align: right; 
+	}
+
+	p
+	{
+		font-size: 14pt;
+	}
+
+	.col-center
+	{
+		display: none;
+	}
+
+	.mobile-col
+	{
+		display: flex;
+	}
+
+
+}
+
+
+@media only screen and (max-width: 600px) {
+
+	h1
+	{
+		font-size: 12pt;
+	}
+
+	h2
+	{
+		font-size: 13pt;
+
+	}
+
+	h3
+	{
+		font-size: 60pt;
+	}
+
+	h4
+	{
+		font-size: 9pt;
+	}
+
+	p
+	{
+		font-size: 12pt;
+	}
+
+	.col-center
+	{
+		display: none;
+	}
+
+	body
+	{
+		padding: 0pt 10pt;
+	}
+
+	.col
+	{
+		flex: 1;
+		padding: 10pt;
+	}
+
+	div
+	{
+		padding: 10pt 0;
+	}
+
+	.mobile-col
+	{
+		display: flex;
+	}
+
+	input[type="email"]
+	{
+		font-size: 18pt;
+	}
+
+
+}
+
+
+
+
+
+
+
+
+
+

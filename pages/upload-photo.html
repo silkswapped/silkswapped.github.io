@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SilkSwap Privacy Policy</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="description" content="Demo project with jQuery">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+	<nav class="nav-padding">
+		<div class="left-nav">
+			<a href="../index.html">
+				<h4>SilkSwap</h4>
+			</a>
+		</div>
+		<div class="right-nav">
+			<a href="garments/garment-index.html">
+				<p3 class="nav-element">
+					Garments
+				</p3>
+			</a>
+			<a href="faq.html">
+				<p3 class="nav-element">
+					FAQ
+				</p3>
+			</a>
+			<a href="join.html">
+				<p3 class="border nav-button" style="padding: 5pt 10pt">
+					Join The Beta
+				</p3>
+			</a>
+		</div>
+	</nav>
+
+	<div class="success">
+		<div class="join-beta-contents">
+			<h1 class="">Upload Photo</h1>
+            <p3 class="please-upload">
+            Upload a photo of yourself to wear the selected garment. The best photos are well lit, with no bulky clothing that will obstruct your silhouette. Square photos are also prefereable.
+            </p3>
+             
+			<div class="photo-upload-container">
+				<div id="filesubmit">
+                    <div class="form">
+                        <input type="email" class="email-submit" placeholder="example@address.com">
+                        <input type="file" class="file-select" accept="image">
+                        <input class="swap-submit" type="submit">
+                    </div>
+                </div>
+                <p3 class="thanks-submit">Thanks for submitting - we'll get back to you shortly!</p3>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<div class="footer-left">
+			<a style="user-select: none;">
+				<p4>© 2019 SilkSwap</p4>
+			</a>
+
+			<a href="terms-and-conditions.html">
+				<p4>Terms & Conditions</p4>
+			</a>
+
+			<a href="">
+				<p4>Privacy Policy</p4>
+			</a>
+		</div>
+
+		<div class="footer-right">
+			<p4>Region: United States</p4>
+		</div>
+	</footer>
+
+	<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+
+    <script>
+          !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t,e){var n=document.createElement("script");n.type="text/javascript";n.async=!0;n.src="https://cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(n,a);analytics._loadOptions=e};analytics.SNIPPET_VERSION="4.1.0";
+          analytics.load("H4skYGkYVnhpgcESdu9sGkuIiDpkARWL");
+          analytics.page();
+          }}();
+        </script>
+
+    <script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
+    <script type="text/javascript" src="../js/verify.js"></script>
+	<script type="text/javascript">
+		jQuery(function(){
+            $(".swap-submit").click(function(){
+                $("#filesubmit").hide();  
+                $(".thanks-submit").show();  
+            });
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,1838 @@
+/*
+========================================================
+========================================================
+========================================================
+
+TABLE OF CONTENTS
+
+========================================================
+========================================================
+--------------------------------------------------------
+
+1 UNIVERSAL CSS
+	- 1.1 Universal CSS & Fonts
+	- 1.2 Headers, Text, and Buttons
+	- 1.3 Content Padding
+	- 1.4 NAV CSS
+	- 1.5 footer css
+
+2 LANDING PAGE CSS
+	- 2.1 landing page css
+	- 2.2 showcase css
+	- 2.3 collection css
+	- 2.4 trending garment css
+	- 2.5 creator spotlight css
+
+3 FOOTER PAGE CSS
+	- 3.1 footer css
+	- 3.1 terms & conditions css
+	- 3.2 Privacy Policy css
+	
+4 FAQ CSS
+	-4.1 faq css
+
+5 GARMENT PAGES CSS
+	-5.1 garment index
+	-5.2 garment purchase
+
+6 JOIN BETA
+
+7 SUCCESS
+
+*/
+
+/*
+=======================================================
+
+Section 1: UNIVERSAL CSS
+
+=======================================================
+*/
+
+/*
+Section 1.1 Universal CSS & Fonts
+-------------------------------------------------------
+*/
+@font-face
+{
+	font-family: freight-display-bold;
+
+	src: url(../fonts/freight-display-bold.woff);
+}
+
+@font-face
+{
+	font-family: freight-display-semibold;
+
+	src: url(../fonts/freight-display-semibold.woff);
+}
+
+@font-face
+{
+	font-family: freight-display-medium;
+
+	src: url(../fonts/freight-display-medium.woff);
+}
+
+@font-face
+{
+	font-family: freight-display-light;
+
+	src: url(../fonts/freight-big-light.otf);
+}
+
+@font-face
+{
+	font-family: freight;
+
+	src: url(../fonts/freight.woff);
+}
+
+@font-face
+{
+	font-family: authentic-sans;
+
+	src: url(../fonts/authentic-sans.otf);
+}
+
+*
+{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+a
+{
+	color:inherit;
+	text-decoration: none;
+	padding: 0;
+	margin: 0;
+}
+
+input[type=email]
+{
+	border: solid;
+	border-width: 1px;
+	padding: 5pt 10pt;
+	display:block;
+	margin: 10pt auto;
+	width: 200px;
+}
+
+.file-select
+{
+	padding: 10pt;
+	display:block;
+	margin: 10pt auto;
+	border: solid;
+	border-width: 1px;
+	padding: 5pt 10pt;
+	width: 200px;
+}
+
+.swap-submit
+{
+	padding: 10pt;
+	display:block;
+	margin: 10pt auto;
+	border: solid;
+	border-width: 1px;
+	padding: 5pt 10pt;
+	background-color: white;
+	width: 200px;
+}
+
+/*button:focus
+{
+	outline: grey;
+}
+*/
+button
+{
+	cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5
+{
+	font-weight: normal;
+}
+
+/*body,
+html
+{
+	width: 100%;
+	height: 100%;
+}
+*/
+.col-1
+{
+	flex: 1;
+}
+
+.col-2
+{
+	flex: 2;
+}
+
+@media only screen and (max-width: 1440px) {
+	
+}
+
+@media only screen and (max-width: 1275px) {
+	
+}
+
+@media only screen and (max-width: 850px) {
+	
+}
+
+@media only screen and (max-width: 425px) {
+	.col-1
+	{
+		flex: 1;
+		flex-basis: 200pt;
+	}
+}
+
+@media only screen and (max-width: 320px) {
+	
+}
+
+
+/*
+Section 1.2 Headers, Text, and Buttons
+-------------------------------------------------------
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5
+{
+	text-transform: capitalize;
+}
+
+h1,
+h2,
+h3
+{
+	font-family: freight-display-light, times, serif;
+}
+
+h4
+{
+	font-family: freight-display-light, times, serif;
+}
+
+h5,
+h6
+{
+	font-family: freight-display-medium, times, serif;
+}
+
+h1
+{
+	font-size: 4rem;
+
+}
+
+h2
+{
+	font-size: 3.5rem;
+}
+
+h3
+{
+	font-size: 2.5rem;
+}
+
+h4
+{
+	font-size: 1.9rem;
+}
+
+h5
+{
+	font-size: 14pt;
+}
+
+p1,
+p2,
+p3,
+p4,
+p5
+{
+	font-family: authentic-sans, helvetica, sans;
+}
+
+p1
+{
+	font-size: 16pt;
+}
+
+p2
+{
+	font-size: 14pt;
+}
+
+p3
+{
+	font-size: 11pt;
+}
+
+p4
+{
+	font-size: 9pt;
+}
+
+.section-header-title
+{
+	line-height: 200%;
+	text-align: center;
+}
+
+.border
+{
+	border-style: solid;
+	border-width: 1px;
+	border-color: black;
+	background-color: white;
+}
+
+button
+{
+	font-family: authentic-sans, helvetica, sans;
+	cursor: pointer;
+	text-align: center;
+
+	color: black
+	border-width: 1px;
+	border-color: black;
+	background-color: white;
+}
+
+.see-all-button
+{
+	padding: 15pt;
+	font-size: 14pt;
+	text-align: center;
+	cursor: pointer;
+}
+
+.join-the-beta-button
+{
+	position: absolute;
+	bottom:40pt;
+	width: 200pt;
+	padding: 5pt 15pt;
+	left: 80pt;
+}
+
+.faq-button
+{
+	position: absolute;
+	bottom: 50pt;
+	width: 200pt;
+	padding: 5pt 15pt;
+}
+
+.showcase-button
+{
+	padding: 5pt 15pt;
+	width: 200pt;
+}
+
+.info-panel-button
+{
+	display: block;
+	width: 100%;
+	padding: 15pt;
+	border-right: none;
+	border-left: none;
+	border-bottom: none;
+	font-size: 14pt;
+}
+
+.purchase-button
+{
+	width: 200pt;
+	padding: 5pt 0 4pt 0; 
+	font-size: 14pt;
+	text-align: center;
+	cursor: pointer;
+}
+
+.purchase-button:after
+{
+	content:"Wear It"
+}
+
+.fiveremain:hover:after{ 
+    content:"5 of 5 remaining"
+}
+
+.fourremain:hover:after{ 
+    content:"4 of 5 remaining"
+}
+
+.threeremain:hover:after{ 
+    content:"3 of 5 remaining"
+}
+
+.tworemain:hover:after{ 
+    content:"2 of 5 remaining"
+}
+
+.oneremain:hover:after{ 
+    content:"1 of 5 remaining"
+}
+
+.gone:hover:after{ 
+    content:"sold out"
+}
+
+/*
+.purchase-button:hover:after
+{
+	content:"5 of 5 Remaining"
+}
+*/
+
+@media only screen and (max-width: 1440px) {
+	
+}
+
+@media only screen and (max-width: 1275px) {
+	.join-the-beta-button
+	{
+		left: calc(50% - 100pt);
+		color: white;
+		border-color: white;
+	}
+
+	.showcase-button
+	{
+		color: white;
+		border-color: white;
+	}
+}
+
+@media only screen and (max-width: 850px) {
+	
+}
+
+@media only screen and (max-width: 425px) {
+	h1
+	{
+		font-size: 3rem;
+
+	}
+
+	h2
+	{
+		font-size: 2.5rem;
+	}
+
+	h3
+	{
+		font-size: 1.9rem;
+	}
+
+	h4
+	{
+		font-size: 1.5rem;
+	}
+}
+
+@media only screen and (max-width: 320px) {
+	
+}
+
+/*
+Section 1.3 Content Padding
+-------------------------------------------------------
+*/
+
+.padded
+{
+	padding: 40pt 80pt;
+}
+
+@media only screen and (max-width: 1440px) {
+	
+}
+
+@media only screen and (max-width: 1275px) {
+
+}
+
+@media only screen and (max-width: 850px) {
+	.padded
+	{
+		padding: 40pt 40pt;
+	}
+}
+
+@media only screen and (max-width: 425px) {
+	.padded
+	{
+		padding: 10pt 10pt;
+	}
+}
+
+@media only screen and (max-width: 320px) {
+	.padded
+	{
+		padding: 10pt 10pt;
+	}
+}
+
+/*
+Section 1.4 Nav CSS
+-------------------------------------------------------
+*/
+nav
+{
+	position: fixed;
+	z-index: 1000;
+	top: 0;
+	left: 0;
+
+	display: flex;
+
+	width: 100%;
+
+	background-color: white;
+
+	justify-content: space-between;
+}
+
+.nav-padding
+{
+	padding: 15pt 80pt;
+}
+
+.right-nav
+{
+	padding-top: 2pt;
+}
+
+.nav-element
+{
+	padding-left: 8pt;
+}
+
+.nav-element:last-of-type
+{
+	padding-right: 16pt;
+}
+
+@media only screen and (max-width: 1440px) {
+	
+}
+
+@media only screen and (max-width: 1275px) {
+
+}
+
+@media only screen and (max-width: 850px) {
+	.nav-padding
+	{
+		padding: 15pt 40pt;
+	}
+}
+
+@media only screen and (max-width: 425px) {
+	.nav-padding
+	{
+		padding: 15pt 10pt;
+	}
+
+	.nav-element
+	{
+		padding-left: 1pt;
+		font-size: 9pt;
+	}
+
+	.nav-element:last-of-type
+	{
+		padding-right: 10pt;
+	}
+	
+	.nav-button
+	{
+		font-size: 9pt;
+	}
+
+	.right-nav
+	{
+		padding-top: 3pt;
+	}
+
+
+}
+
+@media only screen and (max-width: 320px) {
+
+}
+
+/*
+Section 1.4 Nav CSS
+-------------------------------------------------------
+*/
+
+footer
+{
+	display: flex;
+	padding: 20pt 80pt;
+	justify-content: space-between;
+}
+
+
+.footer-left
+{
+	display: flex;
+}
+
+.footer-left>*
+{
+	padding-right: 10pt;
+}
+
+@media only screen and (max-width: 1440px) {
+	
+}
+
+@media only screen and (max-width: 1275px) {
+	
+}
+
+@media only screen and (max-width: 850px) {
+	footer
+	{
+		padding: 20pt 40pt;
+	}
+}
+
+@media only screen and (max-width: 425px) {
+	footer
+	{
+		padding: 10pt 10pt;
+	}
+}
+
+@media only screen and (max-width: 320px) {
+	
+}
+
+
+/*
+=======================================================
+
+Section 2: LANDING PAGE CSS
+
+=======================================================
+*/
+
+/*
+Section 2.1 Landing Page Content CSS
+-------------------------------------------------------
+*/
+
+.vimeo-wrapper {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	pointer-events: none;
+	overflow: hidden;
+	/*background: url(../images/index/homePageRender.jpg) no-repeat center center;*/
+}
+.vimeo-wrapper iframe {
+	width: 100vw;
+	height: 56.25vw; /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
+	min-height: 100vh;
+	min-width: 177.77vh; /* Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.background-wrapper {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	pointer-events: none;
+	overflow: hidden;
+	/*background: url(../images/index/homePageRender.jpg) no-repeat center center;*/
+}
+.background-wrapper img {
+	width: 100vw;
+	height: 56.25vw; /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
+	min-height: 100vh;
+	min-width: 177.77vh; /* Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+
+.landing-page
+{
+	display: flex;	
+
+	height: calc(100vh - 70px);
+	margin-top: 70px;
+
+	background-position: left;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
+	align-content: center;
+}
+
+.landing-page > h1
+{
+	align-self: center;
+}
+
+.image-credit
+{
+	position: absolute;
+	color: lightgrey;
+	right: 80pt;
+	bottom: 40pt;
+}
+
+@media only screen and (max-width: 1440px) {
+	
+}
+
+@media only screen and (max-width: 1275px) {
+	.landing-page > h1
+	{
+		color: white;
+		mix-blend-mode: hard-light;
+	}
+
+	.landing-page
+	{
+		justify-content: center;
+	}
+}
+
+@media only screen and (max-width: 850px) {
+	.landing-page > h1
+	{
+		mix-blend-mode: difference;
+	}
+
+	.image-credit
+	{
+		right: 40pt;
+		bottom: 40pt;
+	}
+
+}
+
+@media only screen and (max-width: 425px) {
+	.landing-page > h1
+	{
+		mix-blend-mode: multiply;
+	}
+
+	.image-credit
+	{
+		position: absolute;
+		color: lightgrey;
+		right: calc(50% - 40pt);
+		bottom: 10pt;
+		font-size: 8pt;
+		text-align: center;
+	}
+}
+
+@media only screen and (max-width: 320px) {
+	
+}
+
+/*
+Section 2.2 showcase css
+-------------------------------------------------------
+*/
+
+.showcase
+{
+	position: relative;
+
+	display: flex;
+
+	height: calc(100vh - 70px);
+
+	background: url(../images/index/showcase-fernando-ruffle.png) no-repeat center center;
+	background-position: center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
+	align-content: center;
+}
+
+.landing-page > h1
+{
+	align-self: center;
+}
+
+.showcase-text
+{
+	position: absolute;
+	bottom: 30pt;
+
+	display: flex;
+
+	width: calc(100vw - 160pt);
+
+	justify-content: space-between;
+}
+
+.showcase-text-left > p2
+{
+	line-height: 200%;
+}
+
+.showcase-text-right
+{
+	position: absolute;
+	right: 80pt;
+	bottom: 30pt;
+
+	display: flex;
+}
+
+@media only screen and (max-width: 1440px) {
+	
+}
+
+@media only screen and (max-width: 1275px) {
+	.showcase
+	{
+		display: block;
+	}
+
+	.showcase-text
+	{
+		display: block;
+		bottom: 80pt;
+		color:white;
+		padding: 0;
+	}
+
+	.showcase-text-right
+	{
+		bottom: 30pt;
+		left: calc(50% - 100pt);
+		display: block;
+	}
+	
+	.showcase-text-left
+	{
+		text-align: center;
+	}
+
+	.showcase-text-left > h3
+	{
+		text-align: center;
+	}
+
+}
+
+@media only screen and (max-width: 850px) {
+	.showcase-text
+	{
+		width: calc(100vw - 80pt);
+	}
+}
+
+@media only screen and (max-width: 425px) {
+	.showcase-text
+	{
+		width: calc(100vw - 10pt);
+	}
+}
+
+@media only screen and (max-width: 320px) {
+	
+}
+
+/*
+Section 2.3 collection css
+-------------------------------------------------------
+*/
+
+.new-collection-container
+{
+	margin-top: 40pt;
+	min-width: 850pt;
+}
+
+.new-collection
+{
+	display: flex;
+	flex-direction: row-reverse;
+	height: 550px;
+	margin-bottom: 10pt;
+}
+
+.new-collection:first-of-type
+{
+	margin-top: 40pt;
+}
+
+.collectio-info-panel
+{
+	padding: 10pt;
+	position: relative;
+}
+
+.lower-info-panel
+{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+.lower-info-text
+{
+	padding: 10pt;
+	line-height: 140%;
+}
+
+.collection-preview-photo 
+{
+	border-left: none;
+}
+
+@media only screen and (max-width: 1440px) {
+	
+}
+
+@media only screen and (max-width: 1275px) {
+	.new-collection
+	{
+		display: block;
+		height: auto;
+	}
+
+	.new-collection-container
+	{
+		margin-top: 20pt;
+		min-width: 0pt;
+	}
+
+	.collection-preview-photo
+	{
+		height: 400pt;
+	}
+
+	.lower-info-panel
+	{
+		position: static;
+	}
+
+	.collectio-info-panel
+	{
+		padding: 0pt;
+	}
+	
+	.upper-info-panel > h3
+	{
+		padding: 10pt 10pt 20pt 10pt;
+		text-align: center;
+	}
+
+}
+
+@media only screen and (max-width: 850px) {
+	
+}
+
+@media only screen and (max-width: 425px) {
+	.collection-preview-photo
+	{
+		height: 300pt;
+	}
+
+	.new-collection
+	{
+		display: block;
+	}
+
+	.new-collection-container
+	{
+		margin-top: 20pt;
+		min-width: 0pt;
+	}
+
+/*	.lower-info-panel
+	{
+		height: 300pt;
+	}
+*/}
+
+@media only screen and (max-width: 320px) {
+	.new-collection
+	{
+		display: block;
+	}
+
+	.new-collection-container
+	{
+		margin-top: 5pt;
+		min-width: 0pt;
+	}
+
+	.lower-info-panel
+	{
+		height: 300pt;
+		background-color: red;
+	}
+}
+
+/*
+Section 2.4 trending garment css
+-------------------------------------------------------
+*/
+
+.trending-garment-carousel
+{
+	display: flex;
+}
+
+.trending-garment-title-carousel
+{
+	display: flex;
+}
+
+.garment
+{
+	height: 300pt;
+	margin: 0 5pt 10pt;
+	min-width: 120pt;
+	cursor: pointer;
+	border: solid;
+	border-color: white;
+	border-width: 1px;
+}
+
+.garment:hover
+{
+	border-color: black;
+
+}
+
+.garment-image
+{
+	height: 300pt;
+	min-width: 150pt;
+}
+
+.garment-caption
+{
+	margin: 0 5pt 10pt;
+	min-width: 120pt;
+	padding: 0 10pt 0 5pt ;
+	text-align: center;
+	display: block;
+}
+
+.garment-designer
+{
+	margin-bottom: 3pt;
+	display: block;
+}
+
+.garment-name
+{
+	display: block;
+}
+
+.garment:first-of-class
+{
+	margin-left: 0; 
+}
+
+.garment:last-of-class
+{
+	margin-right: 0; 
+}
+
+.garment-caption:first-of-class
+{
+	margin-left: 0; 
+}
+
+.garment-caption:last-of-class
+{
+	margin-right: 0; 
+}
+
+@media only screen and (max-width: 1440px) {
+	
+}
+
+@media only screen and (max-width: 1275px) {
+	.garment
+	{
+		height: 250pt;
+	}
+
+	.garment-image
+	{
+		height: 250pt;
+	}
+
+	.garment:last-of-type
+	{
+		display: none;
+	}
+	.garment-caption:last-of-type
+	{
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 850px) {
+	.garment-image
+	{
+		height: 200pt;
+		min-width: 0pt;
+	}
+	.garment
+	{
+		height: 200pt;
+		min-width: 0pt;
+	}
+
+	.garment-caption
+	{
+		min-width: 0pt;
+	}
+}
+
+@media only screen and (max-width: 425px) {
+	.garment-image
+	{
+		height: 100pt;
+		min-width: 0pt;
+	}
+	.garment
+	{
+		height: 100pt;
+		min-width: 0pt;
+	}
+
+}
+
+@media only screen and (max-width: 320px) {
+	
+}
+
+/*
+Section 2.4 creator spotlight css
+-------------------------------------------------------
+*/
+
+.creator-container
+{
+	display: flex;
+}
+
+.creator-spotlight
+{
+	height: 400pt;
+	margin: 0 5pt 10pt;
+	min-width: 150pt;
+}
+
+.creator-spotlight:first-of-type
+{
+	margin-left: 0; 
+}
+
+.creator-spotlight:last-of-type
+{
+	margin-right: 0; 
+}
+
+@media only screen and (max-width: 1440px) {
+	
+}
+
+@media only screen and (max-width: 1275px) {
+	
+}
+
+@media only screen and (max-width: 850px) {
+	
+}
+
+@media only screen and (max-width: 425px) {
+	
+}
+
+@media only screen and (max-width: 320px) {
+	
+}
+
+/*
+=======================================================
+
+Section 3: FOOTER CSS
+
+=======================================================
+*/
+
+
+/*
+Section 3.1 footer css
+-------------------------------------------------------
+*/
+
+.footer-absolute
+{
+	position: absolute;
+	display: flex;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+}
+
+@media only screen and (max-width: 1440px) {
+	
+}
+
+@media only screen and (max-width: 1275px) {
+	
+}
+
+@media only screen and (max-width: 850px) {
+	
+}
+
+@media only screen and (max-width: 425px) {
+	
+}
+
+@media only screen and (max-width: 320px) {
+	
+}
+
+/*
+Section 3.1 Terms and conditions css
+-------------------------------------------------------
+*/
+
+.terms-and-conditions
+{
+	padding:70px 0; 
+
+	width: 500pt;
+	display: block;
+	margin: auto;
+	height: auto;
+
+}
+
+.terms-and-conditions > h3
+{
+	text-align: center;
+	padding: 40pt 0;
+}
+
+@media only screen and (max-width: 1440px) {
+	
+}
+
+@media only screen and (max-width: 1275px) {
+	
+}
+
+@media only screen and (max-width: 850px) {
+	
+}
+
+@media only screen and (max-width: 425px) {
+	.terms-and-conditions
+	{
+		padding:50px 10px; 
+
+		width: auto;
+		display: block;
+		margin: auto;
+		height: auto;
+
+	}
+}
+
+@media only screen and (max-width: 320px) {
+	
+}
+
+/*
+Section 3.2 Privacy Policy 
+-------------------------------------------------------
+*/
+
+.privacy-policy
+{
+	padding:70px 0; 
+
+	width: 500pt;
+	display: block;
+	margin: auto;
+	height: auto;
+
+}
+
+.privacy-policy > h3
+{
+	text-align: center;
+	padding: 40pt 0;
+}
+
+@media only screen and (max-width: 1440px) {
+	
+}
+
+@media only screen and (max-width: 1275px) {
+	
+}
+
+@media only screen and (max-width: 850px) {
+	
+}
+
+@media only screen and (max-width: 425px) {
+	
+}
+
+@media only screen and (max-width: 320px) {
+	
+}
+
+/*
+=======================================================
+
+Section 4: FAQ CSS
+
+=======================================================
+*/
+
+/*
+Section 4.1 faq css
+-------------------------------------------------------
+*/
+
+.faq
+{
+	padding:70px 0; 
+
+	max-width: 500pt;
+	display: block;
+	margin: auto;
+	height: auto;
+
+}
+
+.faq > h1
+{
+	text-align: center;
+	padding: 30pt 0;
+}
+
+.faq > h4
+{
+	text-align: left;
+	padding: 25pt 0 15pt;
+	line-height: 120%;
+	text-transform: none;
+}
+
+@media only screen and (max-width: 1440px) {
+	
+}
+
+@media only screen and (max-width: 1275px) {
+	
+}
+
+@media only screen and (max-width: 850px) {
+	.faq
+	{
+		padding:70px 40pt; 
+	}
+
+}
+
+@media only screen and (max-width: 425px) {
+	.faq
+	{
+		padding:70px 10pt; 
+	}
+}
+
+@media only screen and (max-width: 320px) {
+	.faq
+	{
+		padding:70px 10pt; 
+	}
+}
+
+/*
+=======================================================
+
+Section 5: GARMENT PAGES CSS
+
+=======================================================
+*/
+
+/*
+Section 5.1 garment index
+-------------------------------------------------------
+*/
+
+.garment-index
+{
+	margin-top: 80px;
+	padding: 0 80pt;
+}
+
+.collection-header
+{
+	display: inline-block;
+	padding: 5pt 10pt 10pt 0;
+}
+
+.garment-index-margin
+{
+	margin-right:10pt;
+}
+
+.garment-index-margin:last-of-type
+{
+	margin:0;
+}
+
+.garment-index-image
+{
+	height: 300pt;
+	cursor: pointer;
+	border: solid;
+	border-color: white;
+	border-width: 1px; 
+	min-width: 150px;
+}
+
+.garment-index-image:hover
+{
+	border-color: black;
+}
+
+.garment-row
+{
+	margin:auto;
+	margin-bottom: 20pt;
+	margin-top: 20pt;
+}
+
+.garment-index-title
+{
+	display: block;
+	margin: auto;
+	padding: 10pt 0 5pt 0;
+	text-align: center;
+}
+
+.garment-index-limited-release
+{
+	display: block;
+	margin: auto;
+	padding: 0pt 0 3pt 0;
+	text-align: center;
+}
+
+.garment-index-price
+{
+	display: block;
+	margin: auto;
+	text-align: center;
+}
+
+.row
+{
+	display: flex;
+	max-width: 900pt;
+}
+
+.wrap
+{
+	flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 1440px) {
+	
+}
+
+@media only screen and (max-width: 1275px) {
+	
+}
+
+@media only screen and (max-width: 850px) {
+	.garment-index-image
+	{
+		height: 200pt;
+		min-width: 0px;
+	}
+
+	.garment-index
+	{
+		margin-top: 80px;
+		padding: 0 40pt;
+	}
+}
+
+@media only screen and (max-width: 425px) {
+	.garment-index
+	{
+		margin-top: 81px;
+		padding: 0 10pt;
+	}
+
+	.garment-index-image
+	{
+		height: 200pt;
+		margin-top: 20pt;
+	}
+
+	.wrap
+	{
+		max-width: calc(50% - 10pt);
+	}
+
+	.row
+	{
+		display: flex;
+		flex-wrap: wrap;
+		width: calc(100vw - 20pt);
+	}
+
+	.garment-index > p3
+	{
+		font-size: 9pt;
+	}
+
+	.garment-row
+	{
+		margin-top: 0;
+	}
+}
+
+@media only screen and (max-width: 320px) {
+	
+}
+
+/*
+Section 5.2 garment purchase
+-------------------------------------------------------
+*/
+.garment-purchase
+{
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	top:0;
+	left: 0;
+	padding: 0 80pt;
+}
+.purchase-panel
+{
+	margin-top: 200pt;
+}
+
+.purchase-panel > *
+{
+	margin:10pt 0;
+	display: block;
+}
+
+.purchase-warning
+{
+	display: block;
+	width: 200pt;
+	line-height: 140%;
+	opacity: .7
+}
+
+.purchase-garment-image-container
+{
+	align-self: center;
+}
+
+.purchase-garment-image
+{
+	height: 400pt;
+	width: 100%;
+	cursor: pointer;
+	border: solid;
+	border-color: white;
+	border-width: 1px;
+	margin-top: 70px;
+}
+
+.small-link
+{
+	cursor: pointer;
+	user-select: none;
+}
+
+.purchase-garment-image-container
+{
+	height: calc(100vh - 141px)
+}
+
+.how-purchasing-works-p
+{
+	font-size: 9pt;
+	font-family: authentic-sans;
+	display: block;
+	padding-top: 7pt;
+	width: 200pt;
+	line-height: 140%;
+	display: none;
+}
+
+.how-swaps-work-p
+{
+	font-size: 9pt;
+	font-family: authentic-sans;
+	display: block;
+	padding-top: 7pt;
+	width: 200pt;
+	line-height: 140%;
+	display: none;
+}
+
+.how-swaps-work
+{
+	padding-bottom: 40pt;
+}
+
+@media only screen and (max-width: 1440px) {
+	
+}
+
+@media only screen and (max-width: 1275px) {
+	
+}
+
+@media only screen and (max-width: 850px) {
+	.garment-purchase
+	{
+		padding: 0 40pt;
+		display: block;
+	}
+
+	.purchase-garment-image-container
+	{
+		height: 300pt;
+		width: auto;
+		min-width: 320px
+	}
+
+	.purchase-garment-image
+	{
+		height: 100%;
+		width: auto;
+	}
+
+	.purchase-panel
+	{
+		margin-top: 10pt;
+		text-align: center;
+	}
+
+	.purchase-warning
+	{
+		display: block;
+		width: 200pt;
+		margin:auto;
+		line-height: 140%;
+		opacity: .7
+	}
+
+	.how-purchasing-works-p
+	{
+		margin:auto;
+		text-align: left;
+	}
+
+	.how-swaps-work-p
+	{
+		margin:auto;
+		text-align: left;
+	}
+}
+
+@media only screen and (max-width: 425px) {
+	.purchase-garment-image-container
+	{
+		height: 250pt;
+		width: auto;
+		min-width: 290px
+	}
+
+	.garment-purchase
+	{
+		padding: 0 10pt;
+		display: block;
+	}
+}
+
+@media only screen and (max-width: 320px) {
+	
+}
+
+
+/*
+=======================================================
+
+Section 6: JOIN BETA CSS
+
+=======================================================
+*/
+
+.join-beta
+{
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+}
+
+.join-beta-header
+{
+	margin-bottom: 40pt;
+}
+
+.join-beta-contents
+{
+	align-self: center;
+	text-align: center;
+}
+
+.join-beta-form  > * 
+{
+	display: block;
+	margin:auto;
+	width: 200pt;
+	text-align: center;
+	margin-bottom: 10pt;
+	border: solid;
+	border-color: black;
+	border-width: 1px;
+	padding:5pt 10pt 3pt 10pt;
+}
+
+.join-beta-form 
+{
+	margin-bottom: 10pt;
+}
+
+.join-beta-form-buttons
+{
+	font-size: 14pt;
+}
+
+.thank-you-text {
+    display: none;
+}
+
+.beta-explainer
+{
+
+}
+
+@media only screen and (max-width: 1440px) {
+	
+}
+
+@media only screen and (max-width: 1275px) {
+	
+}
+
+@media only screen and (max-width: 850px) {
+	
+}
+
+@media only screen and (max-width: 425px) {
+	
+}
+
+@media only screen and (max-width: 320px) {
+	
+}
+
+/*
+=======================================================
+
+Section 6: JOIN BETA CSS
+
+=======================================================
+*/
+
+.success
+{
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+	justify-content: center;
+}
+
+.thanks-submit
+{
+    display: none;
+}
+
+.please-upload
+{
+	padding: 20pt 0;
+	max-width:250pt;
+	text-align: left;
+	display: block;
+	margin: auto;
+}
+

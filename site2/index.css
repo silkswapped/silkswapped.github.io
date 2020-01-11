@@ -1,0 +1,481 @@
+/*=============================
+TABLE OF CONTENTS
+===============================
+1) Global CSS
+
+
+2) SECTION CSS
+	2.1) intro section
+
+	2.2) new garment section
+
+	2.3) sign up section
+
+	*/
+
+/*
+===============================
+1)		GLOBAL CSS
+===============================
+*/
+
+@font-face
+{
+	src:url(../fonts/FreightBigLight.otf);
+	font-family: f-large;
+}
+
+@font-face
+{
+	src:url(../fonts/FreightDisplayMedium.otf);
+	font-family: f-medium;
+}
+
+@font-face
+{
+	src:url(../fonts/AUTHENTIC-Sans.otf);
+	font-family: sans;
+}
+
+*
+{
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	height: 100%;
+	width: 100vw;
+	overflow-x: hidden;
+}
+
+body
+{
+	background-color: #F9F6EF
+}
+
+html
+{
+	color:#9B8400;
+	background-color: #F9F6EF
+}
+
+h1
+{
+	font-family: f-large;
+	font-size: 11vw;
+	font-weight: normal;
+	position: absolute;
+	top: 0px;
+	left: 120px;
+	z-index: 1000;
+}
+
+p
+{
+	font-family: sans;
+	font-weight: normal;
+}
+
+@media only screen and (max-width: 1050px) {
+	h1
+	{
+
+		font-size: 70pt;
+		font-weight: normal;
+		position: static;
+		display: block;
+		margin: auto;
+		width: 100vw;
+		text-align: center;
+	}
+}
+
+/*
+===============================
+2)		SECTION CSS
+===============================
+*/
+
+/*
+2.1 intro block -----------------------------------------
+*/
+
+.intro
+{
+	width: 1000px;
+	display: block;
+	margin:0 auto;
+	margin-top: 150px;
+}
+
+.intro-block
+{
+	position: relative;
+	margin: 60pt 0;
+}
+
+.img-center
+{
+	display: block;
+	margin: 0 auto;
+	width: 500px
+}
+
+.text-left
+{
+	background-color: #F9F6EF;
+	padding: 20px;
+	font-size: 20pt;
+	width: 250pt;
+	position: absolute;
+	top:50%;
+
+}
+
+.text-right
+{
+	background-color: #F9F6EF;
+	padding: 20px;
+	font-size: 20pt;
+	width: 250pt;
+	position: absolute;
+	top:50%;
+	right: 0;
+}
+
+@media only screen and (max-width: 1050px) {
+	.intro
+	{
+		width: 100vw;
+		margin-top: 0px;
+	}
+
+	.intro-block:first-of-type
+	{
+		position: relative;
+		margin: 15pt 0;
+	}
+
+	.text-left
+	{
+		font-size: 20pt;
+		position: initial;
+		margin: auto;
+		display: block;
+		text-align: center;
+		width: 70vw;
+	}
+
+	.text-right
+	{
+		font-size: 20pt;
+		position: initial;
+		display: block;
+		text-align: center;
+		margin: auto;
+		width: 70vw;
+	}
+
+	.img-center
+	{
+		display: block;
+		margin: 0 auto;
+		width: 70vw;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.intro-block
+	{
+		position: relative;
+		margin: 40pt 0;
+	}
+
+	.img-center
+	{
+		display: block;
+		margin: 0 auto;
+		width: 80vw;
+	}
+
+	.text-left
+	{
+		font-size: 14pt;
+		
+	}
+
+	.text-right
+	{
+		font-size: 14pt;
+		
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	.intro-block
+	{
+		position: relative;
+		margin: 30pt 0;
+	}
+
+	.text-left
+	{
+		font-size: 13pt;
+		
+	}
+
+	.text-right
+	{
+		font-size: 13pt;
+		
+	}
+}
+
+/*
+2.2 new-garments -----------------------------------------
+*/
+
+h3
+{
+	font-family: f-large;
+	font-weight: normal;
+	text-align: center;
+	display: none;
+}
+
+.new-h3-garments-container
+{
+	position: absolute;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	display: none;
+}
+
+.new-garments-section
+{
+	background-color: #122122;
+}
+
+.new-garment-block
+{
+	background-color: #122122;
+	display: block;
+	margin: auto;
+}
+
+.desktop-new-garment
+{
+	display: block;
+	margin:auto;
+	height: 400pt;
+}
+
+.mobile-new-garment
+{
+	display: none;
+}
+
+@media only screen and (max-width: 1050px) {
+	.desktop-new-garment
+	{
+		display: block;
+		margin:auto;
+		height: 40vh;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.desktop-new-garment
+	{
+		display: none;
+	}
+
+	h3
+	{
+		display: block;
+		font-size: 36pt;
+		align-self: center;
+		background: #122122;
+		width: 100%;
+	}
+
+
+	.new-h3-garments-container
+	{
+		display: flex;
+		justify-content: center;
+	}
+	
+
+	.main-gallery
+	{
+		position: relative;
+	}
+
+	.mobile-new-garment
+	{
+		display: block;
+		margin: auto;
+		width: 100vw;
+		padding: 20pt 0;
+	}
+}
+
+/*
+2.3 sign-up-----------------------------------------
+*/
+
+.sign-up
+{
+	background-color: #FCE1CC;
+}
+
+h2
+{
+	font-family: f-large;
+	font-size: 120pt;
+	font-weight: normal;
+	text-align: center;
+}
+
+.flex-grid {
+	display: flex;
+}
+
+.col {
+	flex: 1;
+}
+
+.col > p
+{
+	font-size: 16px;
+	padding: 0 30vw;
+}
+
+
+.top-row
+{
+	padding-top: 150px;
+}
+
+.middle-row
+{
+	margin-top: 30pt;
+	padding: 0 60pt;
+	text-align:center;
+}
+
+.bottom-row
+{
+	margin-top: 30pt;
+	padding: 0 60pt;
+	padding-bottom: 200px;
+	text-align:center;
+}
+
+input:focus {
+	outline:none;
+}
+
+.email-submit
+{
+	width: 500px;
+	text-align: center;
+	border-radius: 0;
+	padding: 0;
+	border: none;
+	font-size: 16pt;
+	padding: 5pt 0;
+	font-family: sans;
+}
+
+.swap-submit
+{
+	width: 500px;
+	text-align: center;
+	border-radius: 0;
+	padding: 0;
+	border: none;
+	font-size: 16pt;
+	padding: 5pt 0;
+	margin-top: 5pt;
+	background: black;
+	color:white;
+	font-family: sans;
+}
+
+@media only screen and (max-width: 1050px) {
+	h2
+	{
+		font-size: 80pt;
+	}
+
+	.col > p
+	{
+		font-size: 14px;
+		padding: 0 20vw;
+	}
+
+	.email-submit
+	{
+		width: 400px;
+		font-size: 14pt;
+	}
+
+	.swap-submit
+	{
+		width: 400px;
+		font-size: 14pt;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	h2
+	{
+		font-size: 70pt;
+	}
+
+	.col > p
+	{
+		font-size: 14px;
+		padding: 0 10vw;
+	}
+
+	.email-submit
+	{
+		width: 70vw;
+		font-size: 12pt;
+		line-height: 140%;
+	}
+
+	.swap-submit
+	{
+		width: 70vw;
+		font-size: 12pt;
+		line-height: 140%;
+	}
+	
+	.top-row
+	{
+		padding-top: 30vh;
+	}
+
+	.middle-row
+	{
+		padding: 0 5vw;
+	}
+
+	.bottom-row
+	{
+		padding: 0 30pt;
+		padding-bottom: 25vh;
+	}
+}
+
+
+
+
+
+

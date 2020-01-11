@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SilkSwap Alpha Portal</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="description" content="SilkSwap Alpha Portal">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<style type="text/css"></style>
+	
+	<!-- Compiled and minified CSS -->
+	
+	<script src="js/index.js"></script>
+	<link rel="stylesheet" href="css/index.css">
+	<!-- Compiled and minified JavaScript -->
+	
+
+</head>
+<body>
+	<div class="center">
+		<nav >
+			<a href="" style="text-decoration: none;"><h1>SilkSwap</h1></a>
+			<h5>Alpha Portal</h5>
+		</nav>
+
+		<section class="page-nav">
+			<div class="nav-1 active">1. Select A Garment</div>
+			<div class="nav-2">2. Upload A Photo</div>
+			<div class="nav-3">3. Enter Your Email</div>
+		</section>
+
+		<section class="page-content">
+			<section class="garment-gallery">
+				<div class="garment-container">
+					<img class="garment" src="img/bomber.png" alt="">
+					<button class="garment-select-button" id="bomber">
+						Select Garment
+					</button>
+					<h4><a href="https://www.khomanroom.com/all-products/black-chaos-bomber">Chaos Bomber</a></h4>
+					<p><i>Khoman Room</i></p>
+				</div>
+
+				<div class="garment-container">
+					<img class="garment" src="img/halfVest.png" alt="">
+					<button class="garment-select-button" id="half-vest">
+						Select Garment
+					</button>
+					<h4><a href="https://www.flaquer.online/product-page/nylon-half-vest">Tactical Half Vest</a></h4>
+					<p><i>Fernando Flaquer</i></p>
+				</div>
+
+				<div class="garment-container">
+					<img class="garment" src="img/ruffle.png" alt="">
+					<button class="garment-select-button" id="ruffle">
+						Select Garment
+					</button>
+					<h4><a href="https://www.flaquer.online/product-page/ruffle-jacket-black">Ruffle Jacket</a></h4>
+					<p><i>Fernando Flaquer</i></p>
+				</div>
+
+				<div class="garment-container">
+					<img class="garment" src="img/vest.png" alt="">
+					<button class="garment-select-button" id="vest">
+						Select Garment
+					</button>
+					<h4><a href="https://www.instagram.com/p/BoP00Awlsgu/">Cargo Vest</a></h4>
+					<p><i>Matt Streepy</i></p>
+				</div>
+
+				<h2>Check Back Soon <br> More Garments Are On The Way!</h2> 
+			</section>
+
+			<section class="photo-upload">
+				<p class="description">
+					Upload a photo of yourself to wear the selected garment. The best photos are well lit, with no bulky 
+					clothing that will obstruct your silhouette. Square photos are also prefereable.
+				</p>
+				<div id="filesubmit">
+					<div class="form">
+						<input type="file" class="file-select" accept="image">
+				
+						<input class="file-submit" type="submit">
+					</div>
+				</div>
+
+				<!-- 
+					THIS IS WHERE CODE FOR PHOTO UPLOAD WILL GO IF THE ABOVE DOESNT WORK
+				-->
+			</section>
+
+			<section class="email">
+				<p class="description">
+					Our Technology is currently in alpha and swaps can take several hours. Please bear with us while we add more garments and speed up our pipeline to deliver faster and faster swaps!
+				</p>
+				<div id="emailsubmit">
+					<input type="email" class="email-submit" placeholder="Example@Address.com"> <br>
+					<button class="swap-submit">Dress Me Up</button>
+				</div>
+				<div class="disclaimer">
+					<p>
+						We will email your finished photo to this address. <br> This address 
+						will <b>NOT</b> be used for marketing or retargeting purposes. 
+					</p>
+				</div>
+			</section>
+
+			<section class="thank-u">
+				<p> Thanks, we got your submission! You'll get an email from us soon! </p>
+			</section>
+		</section>
+	</div>
+
+	<script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-storage.js"></script>
+	<script type="module" src="js/firebase.js"></script>
+</body>
+</html>

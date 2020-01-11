@@ -1,0 +1,393 @@
+@font-face
+{
+	font-family: eksell-stencil;
+	src: url(../fonts/EksellDisplayWeb-Stencil.otf);
+}
+
+@font-face
+{
+	font-family: eksell-large;
+	src: url(../fonts/EksellDisplayWeb-Large.otf);
+}
+
+@font-face
+{
+	font-family: eksell-medium;
+	src: url(../fonts/EksellDisplayWeb-Medium.otf);
+}
+
+@font-face
+{
+	font-family: eksell-small;
+	src: url(../fonts/EksellDisplayWeb-Small.otf);
+}
+
+@font-face
+{
+	font-family: arial-narrow;
+	src: url(../fonts/ArialNarrowMTStd.otf);
+}
+
+
+nav
+{
+	padding-top: 20px;
+	background: white;
+	text-align: center;
+}
+
+a
+{
+	color:black;
+	text-decoration: underline;
+}
+
+nav > a:hover
+{
+	color:black;
+}
+
+h1, h2, h3, h4, h5
+{
+	text-align: center;
+}
+
+h4
+{
+	font-family: arial-narrow;
+}
+
+p
+{
+	font-family: arial-narrow;
+}
+
+h1
+{
+	font-family: eksell-large;
+}
+
+h2
+{
+	font-family: arial-narrow;
+}
+
+h5
+{
+	font-family: eksell-small;
+	line-height: 50%;
+}
+
+.center
+{
+	width: 40vw;
+	margin: 0 auto;
+}
+
+.page-nav
+{
+	display: flex;
+	justify-content: space-between;
+	width: auto;
+	text-align: center;
+	padding-top: 30px;
+	font-family: arial;
+	font-size: 1.2em
+}
+
+.nav-1, .nav-2, .nav-3
+{
+	opacity: .5;
+}
+
+.active
+{
+	opacity: 1;	
+}
+
+.garment
+{
+	width: 100%;
+}
+
+.page-content
+{
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.photo-upload
+{
+	display: none;
+}
+
+.email
+{
+	display: none;
+}
+
+.thank-u
+{
+	display: none;
+}
+
+.garment-container
+{
+	position: relative;
+	padding-bottom: 40px;
+}
+
+.garment-select-button
+{
+	position: absolute;
+	top: 40%;
+	border-radius: 5px;
+	left: calc(50% - 85px);
+	width: 170px;
+	height: 50px;
+	border: none;
+	background: #4E4E4E;
+	font-size: 1.3em;
+	color:white;
+	font-family: arial-narrow;
+	padding-top: 5pt;
+	display: none;
+	cursor: pointer;
+}
+
+button
+{
+	border: none;
+}
+
+.color-way-select-button
+{
+	position: absolute;
+	top: 40%;
+	border-radius: 5px;
+	left: calc(50% - 85px);
+	width: 170px;
+	height: 50px;
+	border: none;
+	background: #4E4E4E;
+	font-size: 1.3em;
+	color:white;
+	font-family: arial-narrow;
+	padding-top: 5pt;
+	display: none;
+	cursor: pointer;
+}
+
+.file-submit
+{
+	background: #4E4E4E;
+	font-size: 1.3em;
+	color:white;
+	font-family: arial-narrow;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+.email-submit
+{
+	font-size: 1.5em;
+	font-family: arial-narrow;
+	cursor: pointer;
+	width: 100%;
+	text-align: center;
+	margin-bottom: 10px;
+	padding: 10px 0;
+	border-radius: 5px;
+}
+
+.swap-submit
+{
+	background:  #4E4E4E;
+	font-size: 1.5em;
+	color:white;
+	font-family: arial-narrow;
+	cursor: pointer;
+	width: 100%;
+	padding: 10px 0;
+	border-radius: 5px;
+}
+
+#filesubmit
+{
+	display: flex;
+	justify-content: space-between;
+}
+
+.visible
+{
+	display: initial;
+}
+
+.fade
+{
+	opacity: .5;
+}
+
+p
+{
+	padding-bottom: 30px;
+	text-align: center;
+	width: 90%;
+	margin: 0 auto;
+	display: block;
+}
+
+.disclaimer
+{
+	position: absolute;
+	bottom: 25px;
+	left: 0;
+	text-align: center;
+	width: 100%;
+}
+
+.description
+{
+	font-size: 1.15em;
+}
+
+.form
+{
+	width: 100%;
+}
+
+input[type=submit] {
+	font-size: 1.5em;
+	font-family: arial-narrow;
+	cursor: pointer;
+	width: 100%;
+	text-align: center;
+	margin-bottom: 10px;
+	padding: 10px 0;
+	border-radius: 5px;
+	display: block;
+}
+
+input[type=file] {
+	font-size: 1.5em;
+	font-family: arial-narrow;
+	cursor: pointer;
+	width: 100%;
+	text-align: center;
+	margin-bottom: 10px;
+	padding: 10px 0;
+	border-radius: 5px;
+	display: block;
+}
+
+#emailsubmit [type=file] {
+	cursor: inherit;
+	display: block;
+	font-size: 999px;
+	filter: alpha(opacity=0);
+	min-height: 100%;
+	min-width: 100%;
+	opacity: 0;
+	position: absolute;
+	right: 0;
+	text-align: right;
+	top: 0;
+}
+
+@media only screen and (max-width: 600px) {
+	.page-nav
+	{
+		display: flex;
+		justify-content: space-between;
+		width: auto;
+		padding: 0 30pt;
+		text-align: center;
+		padding-top: 30px;
+		font-family: arial;
+		font-size: .8em;
+	}
+
+	.description
+	{
+		font-size: 1.1em;
+	}
+
+	.photo-upload
+	{
+		padding: 0 30pt;
+	}
+
+	.form
+	{
+		display: block;
+	}
+
+	input
+	{
+		color:white; 
+		display: block;
+	}
+
+	input[type=file] {
+		width: 100%;
+		padding: 12px 20px;
+		margin: 8px 0;
+		box-sizing: border-box;
+		font-size: 2em;
+		color:white;
+		display: inline-block;
+	}
+
+	#file-submit
+	{
+		background: #4E4E4E;
+		font-size: 1.3em;
+		color:white;
+		font-family: arial-narrow;
+		cursor: pointer;
+		border-radius: 5px;
+	}
+
+	input[type=submit] {
+		width: 100%;
+		background-color: black;
+		color: white;
+		padding: 20px 20px;
+		margin: 8px 0;
+		font-size: 2em;
+		border: none;
+		border-radius: 4px;
+		cursor: pointer;
+		display: inline-block;
+	}
+
+	p 
+	{
+		font-size: 1.1em;
+	}
+
+	h4
+	{
+		font-size: 1.5em;
+	}
+
+	.center
+	{
+		width: 90vw;
+		margin: 0 auto;
+	}
+
+	.garment-select-button
+	{
+		top:30%;
+	}
+}
+
+
+
+
+
+
+
+
+
